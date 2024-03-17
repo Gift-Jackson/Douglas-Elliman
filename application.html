@@ -15,9 +15,17 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="loader active">
+        <img src="./assets/loader.svg" alt="">
+    </div>
+
     <header>
         <a href="/">
             <div class="brand">
@@ -61,7 +69,7 @@
                 <input type="hidden" name="_autoresponse" value="Your application has been received!">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_next" value="https://douglasellimanrealestate.netlify.app/submitted.html">
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Apartment Information:</div>
                     <div class="form-grid">
                         <div class="input-control">
@@ -97,7 +105,7 @@
                 </div>
 
                 <!-- Applicant Info -->
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Applicant Information:</div>
                     <div class="form-grid">
                         <div class="input-control">
@@ -106,7 +114,7 @@
                         </div>
                         <div class="input-control">
                             <label for="dob">Date of Birth:</label>
-                            <input type="date" name="dob" id="dob" placeholder="DD/MM/YYYY" onfocus="this.type='date'" onblur="this.type='text'" required autocomplete="off">
+                            <input type="text" name="dob" id="dob" placeholder="DD/MM/YYYY" onfocus="this.type='date'" onblur="this.type='text'" required autocomplete="off">
                         </div>
                         <div class="input-control">
                             <label for="current_address">Current Address:</label>
@@ -187,7 +195,7 @@
                 </div>
 
                 <!-- Employment Information -->
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Employment Information:</div>
                     <div class="form-grid">
                         <div class="input-control">
@@ -239,7 +247,7 @@
                     </div>
                 </div>
 
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Bank Information:</div>
                     <div class="form-grid">
                         <div class="input-control center">
@@ -253,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Other Persons to Occupy Apartment:</div>
                     <div class="form-grid">
                         <div class="division">
@@ -301,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Emergency Contact:</div>
                     <div class="form-grid">
                         <div class="input-control">
@@ -322,7 +330,7 @@
                     </div>
                 </div>
 
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">References:</div>
                     <div class="form-grid">
                         <div class="division">
@@ -348,7 +356,7 @@
                     </div>
                 </div>
 
-                <div class="form-container">
+                <div class="form-container" data-aos="fade-up" data-aos-delay="300">
                     <div class="form-title">Declaration/ Signature:</div>
                     <article>
                         I hereby warrant that all my representation set forth above is true. I further represent that I
@@ -439,10 +447,16 @@
 
     <!-- Javascript -->
     <script src="./js/app.js"></script>
+    <script src="./js/transition.js"></script>
     <script>
         var canvas = document.getElementById('signature-pad');
         var signaturePad = new SignaturePad(canvas);
     </script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script>
 
         const mobileNav = document.querySelector(".mobile-nav");

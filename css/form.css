@@ -101,7 +101,7 @@ form button{
     transform: scale(0);
     border-radius: .5rem;
     text-align: center;
-    animation: modal .2s linear .2s forwards;
+    animation: modal .2s linear 600ms forwards;
 }
 
 @keyframes modal{
