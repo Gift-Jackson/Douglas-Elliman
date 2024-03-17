@@ -65,7 +65,6 @@ input[type="radio"]{
 
 .signatureCanvas{
     border: 1px solid var(--primary-color);
-    height: 200px;
 }
 article{
     font-size: 13px;
